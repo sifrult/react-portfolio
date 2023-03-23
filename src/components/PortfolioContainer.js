@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Foot from './Foot';
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -27,7 +28,7 @@ export default function PortfolioContainer() {
         <div>
             <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
-            {/* Here we wll put the footer, just like the header */}
+            <Foot />
         </div>
     )
 

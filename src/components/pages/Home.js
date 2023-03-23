@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div>
             <p>
-                HOMEEE
+                ABOUT MEEE
             </p>
         </div>
     )
