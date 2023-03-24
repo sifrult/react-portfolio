@@ -5,6 +5,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Foot from './Foot';
+import {projectData} from '../data/projectData';
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -14,7 +15,13 @@ export default function PortfolioContainer() {
             return <Home />;
         }
         if (currentPage === 'Portfolio') {
-            return <Portfolio />;
+            return (
+                projectData.map((project) => (
+                    <Portfolio name={project.name}
+                          description={project.description}
+                          languages = {project.languages}/>
+                  ))
+            )
         }
         if (currentPage === 'Contact') {
             return <Contact />;

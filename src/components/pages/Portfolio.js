@@ -1,11 +1,13 @@
 import React from 'react';
 
-export default function Portfolio() {
+export default function Portfolio(props) {
     return (
         <div>
-            <p>
-                PORTFOLIO
-            </p>
+
+            {props.name}
+            <br />{props.description}
+            <br />{props.languages}
+<p>---</p>
         </div>
     )
 }

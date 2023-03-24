@@ -1,0 +1,10 @@
+
+body {
+    background-color: beige;
+}
+
+.header, .footer {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+}
