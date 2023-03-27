@@ -20,7 +20,8 @@ export default function PortfolioContainer() {
                     <Portfolio name={project.name}
                           description={project.description}
                           languages = {project.languages}
-                          link = {project.link}/>
+                          link = {project.link}
+                          img = {project.img}/>
                   ))
             )
         }
