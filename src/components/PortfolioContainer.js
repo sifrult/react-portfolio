@@ -19,7 +19,8 @@ export default function PortfolioContainer() {
                 projectData.map((project) => (
                     <Portfolio name={project.name}
                           description={project.description}
-                          languages = {project.languages}/>
+                          languages = {project.languages}
+                          link = {project.link}/>
                   ))
             )
         }
