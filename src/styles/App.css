@@ -1,9 +1,46 @@
 body {
-    background-color: #cbede0;
+    background-color: #e2f1ec;
+    font-family: 'Itim', cursive;
 }
 
 .header, .footer {
     background-color: #edc8b8;
     display: flex;
     justify-content: space-around;
+}
+
+.contentStyle {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    font-size: 20px;
+    color: #f07a43;
+}
+
+.avatarStyle {
+    width: 40%;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 600px){
+    .contentStyle {
+        font-size: 30px;
+        padding: 50px;
+    }
+    .avatarStyle {
+        width: 35%;
+        margin-bottom: 15px;
+
+    }
+}
+
+@media screen and (min-width: 800px){
+    .contentStyle {
+        flex-direction: row;
+    }
+    .avatarStyle {
+        width: 80%;
+    }
 }
