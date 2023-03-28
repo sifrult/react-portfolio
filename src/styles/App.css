@@ -3,10 +3,26 @@ body {
     font-family: 'Itim', cursive;
 }
 
+#root {
+    position: relative;
+    min-height: 100vh;
+}
+/*  -----------------------------Change this when I know what the footer height is ---------- */
+.content-wrap {
+    padding-bottom: 50px;
+}
+/*  -----------------------------Change this when I know what the footer height is ---------- */
+
 .header, .footer {
     background-color: #edc8b8;
     display: flex;
     justify-content: space-around;
+}
+
+.footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* About Me secton */
@@ -26,7 +42,6 @@ body {
 }
 
 /* Portfolio section */
-
 .cardStyle {
     display: flex;
     justify-content: center;
@@ -50,6 +65,51 @@ body {
     border: 1px solid #0a5950;
     border-width: 1px 0 0 1px;
 }
+
+/* Resume section */
+.skillStyle {
+    margin: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills > li {
+    margin: 0 10px;
+}
+
+.resumeBtn {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.btn {
+    align-self: center;
+    background-color: #e2f1ec;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    padding: .75rem;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+}
+
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
 @media screen and (min-width: 600px){
     .contentStyle {
         font-size: 30px;
@@ -66,6 +126,14 @@ body {
         width: 40%;
         margin: 15px 15px;
     }
+
+    .skillStyle, .resumeBtn {
+        font-size: 30px;
+    }
+
+    .skills {
+        margin: 0 50px;
+    }
 }
 
 @media screen and (min-width: 800px){
@@ -81,7 +149,12 @@ body {
     .cardStyle {
         margin: 0 5%;
     }
+
     .card {
         width: 30%;
+    }
+
+    .skills {
+        margin: 0 100px;
     }
 }

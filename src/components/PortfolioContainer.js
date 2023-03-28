@@ -36,8 +36,10 @@ export default function PortfolioContainer() {
 
     return (
         <div>
-            <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-            {renderPage()}
+            <div className='content-wrap'>
+                <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+                {renderPage()}
+            </div>
             <Foot />
         </div>
     )
