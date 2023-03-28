@@ -1,6 +1,10 @@
 import React from 'react';
 
 export default function Nav({currentPage, handlePageChange}) {
+
+    const navLink = {color: 'black'}
+    const navLinkActive = {color: 'yellow'}
+
     return (
         <div>
             <h1>
@@ -11,7 +15,7 @@ export default function Nav({currentPage, handlePageChange}) {
                     <a
                     href="#home"
                     onClick={() => handlePageChange('Home')}
-                    className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+                    style={currentPage === 'Home' ? navLinkActive : navLink}
                     >About Me
                     </a>
                 </li>
@@ -19,7 +23,7 @@ export default function Nav({currentPage, handlePageChange}) {
                     <a
                     href="#portfolio"
                     onClick={() => handlePageChange('Portfolio')}
-                    className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                    style={currentPage === 'Portfolio' ? navLinkActive : navLink}
                     >Portfolio
                     </a>
                 </li>
@@ -27,7 +31,7 @@ export default function Nav({currentPage, handlePageChange}) {
                     <a
                     href="#contact"
                     onClick={() => handlePageChange('Contact')}
-                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                    style={currentPage === 'Contact' ? navLinkActive : navLink}
                     >Contact
                     </a>
                 </li>
@@ -35,7 +39,7 @@ export default function Nav({currentPage, handlePageChange}) {
                     <a
                     href="#resume"
                     onClick={() => handlePageChange('Resume')}
-                    className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                    style={currentPage === 'Resume' ? navLinkActive : navLink}
                     >Resume
                     </a>
                 </li>
