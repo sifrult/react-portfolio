@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Nav({currentPage, handlePageChange}) {
 
-    const navLink = {color: 'black'}
-    const navLinkActive = {color: 'yellow'}
+    const navLink = {color: '#4b5171'}
+    const navLinkActive = {color: '#9d8db1', textDecoration: '#9d8db1 overline wavy'}
 
     return (
         <div className='header'>

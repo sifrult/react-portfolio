@@ -1,5 +1,5 @@
 body {
-    background-color: #e2f1ec;
+    background-color: #ecede9;
     font-family: 'Itim', cursive;
 }
 
@@ -16,6 +16,7 @@ body {
 .header > h1 {
     font-size: 45px;
     font-family: 'Monoton', cursive;
+    color: #5b7b9d;
 }
 
 .header, .footer {
@@ -40,6 +41,13 @@ body {
     width: 100%;
 }
 
+.footerLinks > li > a {
+    color: #4b5171;
+}
+
+.footerLinks > li > a:hover {
+    color: #9d8db1;
+}
 /* About Me secton */
 .contentStyle {
     padding: 15px;
@@ -48,7 +56,7 @@ body {
     align-items:center;
     text-align: center;
     font-size: 20px;
-    color: #f07a43;
+    color: #4b5171;
 }
 
 .avatarStyle {
@@ -72,13 +80,21 @@ body {
 }
 
 .cardLink {
-    background-color: #e2f1ec;
+    background-color: #ecede9;
     text-align: right;
     max-width: 75%;
     padding: 5px 0 0 10px;
     border-top-left-radius: 8px 8px;
-    border: 1px solid #0a5950;
+    border: 1px solid #4b5171;
     border-width: 1px 0 0 1px;
+}
+
+.cardLink > a {
+    color: #4b5171;
+}
+
+.cardLink > a:hover {
+    color: #9d8db1;
 }
 
 /* Contact section */
@@ -98,11 +114,12 @@ textarea[name=message] {
 }
 
 input[type=text], textarea[name=message] {
+    background-color: #e4dcda;
+    color: #4b5171;
     font-size: 20px;
     padding: 12px 20px;
     width: 80%;
-    border-style: solid;
-    border-width: 2px;
+    border: 2px solid #4b5171;
     border-bottom-left-radius: 15px 255px;
     border-bottom-right-radius: 225px 15px;
     border-top-left-radius: 255px 15px;
@@ -116,6 +133,7 @@ input[type=text], textarea[name=message] {
 /* Resume section */
 .skillStyle {
     margin: 15px 20px;
+    color: #4b5171;
     text-align: center;
     font-size: 20px;
 }
@@ -140,9 +158,9 @@ input[type=text], textarea[name=message] {
 .btn {
     font-size: 20px;
     align-self: center;
-    background-color: #e2f1ec;
-    border-style: solid;
-    border-width: 2px;
+    color: #4b5171;
+    background-color: #ecede9;
+    border: 2px solid #4b5171;
     border-bottom-left-radius: 15px 255px;
     border-bottom-right-radius: 225px 15px;
     border-top-left-radius: 255px 15px;
@@ -190,25 +208,12 @@ input[type=text], textarea[name=message] {
         text-align: center;
     }
 
-
     .content-wrap {
         padding-bottom: 70px;
     }
 
-
     .headerLinks, .footerLinks {
-
         font-size: 40px;
-    }
-
-    .headerLinks > li {
-        padding: 5px;
-    }
-
-    .footer {
-        position:fixed;
-        bottom: 0;
-        width: 100%;
     }
 
 }
