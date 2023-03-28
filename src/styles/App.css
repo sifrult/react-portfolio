@@ -7,20 +7,35 @@ body {
     position: relative;
     min-height: 100vh;
 }
-/*  -----------------------------Change this when I know what the footer height is ---------- */
+
 .content-wrap {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
-/*  -----------------------------Change this when I know what the footer height is ---------- */
+
+/* Header and footer */
+.header > h1 {
+    font-size: 45px;
+    font-family: 'Monoton', cursive;
+}
 
 .header, .footer {
     background-color: #edc8b8;
+}
+
+.headerLinks, .footerLinks {
+    background-color: #edc8b8;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+.headerLinks > li {
+    padding: 5px;
 }
 
 .footer {
-    position:absolute;
+    position:fixed;
     bottom: 0;
     width: 100%;
 }
@@ -169,6 +184,33 @@ input[type=text], textarea[name=message] {
     .form {
         margin: 0 20%
     }
+
+    .header > h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+
+    .content-wrap {
+        padding-bottom: 70px;
+    }
+
+
+    .headerLinks, .footerLinks {
+
+        font-size: 40px;
+    }
+
+    .headerLinks > li {
+        padding: 5px;
+    }
+
+    .footer {
+        position:fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 800px){

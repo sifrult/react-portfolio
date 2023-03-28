@@ -6,11 +6,11 @@ export default function Nav({currentPage, handlePageChange}) {
     const navLinkActive = {color: 'yellow'}
 
     return (
-        <div>
+        <div className='header'>
             <h1>
                 Amy Snarr
             </h1>
-            <ul className='header'>
+            <ul className='headerLinks'>
                 <li>
                     <a
                     href="#home"

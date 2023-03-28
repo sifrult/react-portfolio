@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function Foot() {
     return(
-        <div>
-            <ul className='footer'>
+        <div className='footer'>
+            <ul className='footerLinks'>
                 <li>
-                    <a href="https://github.com/sifrult" target="_blank" rel="noreferrer">GtHub</a>
+                    <a href="https://github.com/sifrult" target="_blank" rel="noreferrer">GitHub</a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/amy-snarr-504326168/" target="_blank" rel="noreferrer">LinkedIn</a>
