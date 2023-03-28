@@ -10,43 +10,37 @@ export const projectData = [
         name: "Streaming Locator",
         link: 'https://github.com/sifrult/streaming_locator',
         img: streaming,
-        description: "Identify streaming service for movies and tv shows.",
-        languages: "HTML, CSS, JavaScript"
+        languages: "HTML, CSS, JS"
     },
     {
         name: 'Generate README',
         link: 'https://github.com/sifrult/generate_readme',
         img: readme,
-        description: 'Generate README file from user input.',
-        languages: 'Node.js, JavaScript'
+        languages: 'Node.js, JS'
     },
     {
         name: 'Team Profile Generator',
         link: 'https://github.com/sifrult/team_profile_generator',
         img: team,
-        description: 'Generate team from user input.',
-        languages: 'Node.js, HTML, CSS, JavaScript'
+        languages: 'Node.js, HTML, CSS, JS'
     },
     {
         name: 'Employee Tracker',
         link: 'https://github.com/sifrult/employee-tracker',
         img: employee,
-        description: 'Track employees, departments, salaries, and more using MySQL.',
-        languages: 'MySQL, Node.js, JavaScript'
+        languages: 'MySQL, Node.js, JS'
     },
     {
         name: 'Gourmet',
         link: 'https://github.com/brenda255/gourmet',
         img: gourmet,
-        description: 'Online recipe book.',
-        languages: 'HTML, CSS, JavaScript, Node.js, Handlebars, MySQL, Sequelize'
+        languages: 'HTML, CSS, JS, Node.js, Handlebars, MySQL, Sequelize'
     },
     {
         name: 'Social Network API',
         link: 'https://github.com/sifrult/social-network-api',
         img: social,
-        description: 'Create users, add friends, thoughts, and reactions.',
-        languages: 'MongoDB, Node.js, JavaScript'
+        languages: 'MongoDB, Node.js, JS'
     }
 
 ]

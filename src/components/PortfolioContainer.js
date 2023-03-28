@@ -15,14 +15,15 @@ export default function PortfolioContainer() {
             return <Home />;
         }
         if (currentPage === 'Portfolio') {
-            return (
-                projectData.map((project) => (
+            return (<div className='cardStyle'>
+                {projectData.map((project) => (
+
                     <Portfolio name={project.name}
-                          description={project.description}
                           languages = {project.languages}
                           link = {project.link}
                           img = {project.img}/>
-                  ))
+
+                  ))}</div>
             )
         }
         if (currentPage === 'Contact') {
