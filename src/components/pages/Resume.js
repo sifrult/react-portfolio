@@ -26,7 +26,7 @@ export default function Resume() {
                 <li><img src="https://skillicons.dev/icons?i=vscode" title="VSCode" alt="VSCode"/></li>
             </ul>
             <button onClick={onButtonClick}>
-              Download PDF
+              Download Resume
             </button>
         </div>
     );
