@@ -131,7 +131,7 @@ input[type=text], textarea[name=message] {
 }
 
 /* Resume section */
-.skillStyle {
+.skillStyle, .contact {
     margin: 15px 20px;
     color: #4b5171;
     text-align: center;
@@ -191,7 +191,7 @@ input[type=text], textarea[name=message] {
         margin: 15px 15px;
     }
 
-    .skillStyle, .btn, input[type=text], textarea[name=message] {
+    .skillStyle, .contact, .btn, input[type=text], textarea[name=message] {
         font-size: 30px;
     }
 

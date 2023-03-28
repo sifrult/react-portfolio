@@ -69,42 +69,46 @@ export default function Contact() {
   };
 
   return (
-    <div className='formStyle'>
-      <form className="form">
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          onBlur={validateEntry}
-          type="text"
-          placeholder="Name"
-        />
-        {nameError && <div className="error">{nameError}</div>}
-        <br />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          onBlur={validateEntry}
-          type="text"
-          placeholder="Email"
-        />
-        {emailError && <div className="error">{emailError}</div>}
-        <br />
-        <textarea
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          onBlur={validateEntry}
-          type="text"
-          placeholder="Message"
-        />
-        {messageError && <div className="error">{messageError}</div>}
-        <br />
-        <button className='btn' type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
-    </div>
+    <div>
+      <p className='contact'>Email: amy.snarr16@gmail.com <br />
+      Phone: 801-520-3022</p>
+      <div className='formStyle'>
+        <form className="form">
+          <input
+            value={name}
+            name="name"
+            onChange={handleInputChange}
+            onBlur={validateEntry}
+            type="text"
+            placeholder="Name"
+          />
+          {nameError && <div className="error">{nameError}</div>}
+          <br />
+          <input
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            onBlur={validateEntry}
+            type="text"
+            placeholder="Email"
+          />
+          {emailError && <div className="error">{emailError}</div>}
+          <br />
+          <textarea
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            onBlur={validateEntry}
+            type="text"
+            placeholder="Message"
+          />
+          {messageError && <div className="error">{messageError}</div>}
+          <br />
+          <button className='btn' type="button" onClick={handleFormSubmit}>
+            Submit
+          </button>
+        </form>
+      </div>
+  </div>
   );
 }
