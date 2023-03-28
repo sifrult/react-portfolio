@@ -66,6 +66,38 @@ body {
     border-width: 1px 0 0 1px;
 }
 
+/* Contact section */
+.formStyle {
+    margin: 15px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea[name=message] {
+    height: 500px;
+    resize: vertical;
+}
+
+input[type=text], textarea[name=message] {
+    font-size: 20px;
+    padding: 12px 20px;
+    width: 80%;
+    border-style: solid;
+    border-width: 2px;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+}
+
+.error {
+    color: red;
+}
+
 /* Resume section */
 .skillStyle {
     margin: 15px 20px;
@@ -88,13 +120,12 @@ body {
     display: flex;
     justify-content: center;
     margin: 15px;
-    font-size: 20px;
 }
 
 .btn {
+    font-size: 20px;
     align-self: center;
     background-color: #e2f1ec;
-    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
     border-style: solid;
     border-width: 2px;
     border-bottom-left-radius: 15px 255px;
@@ -127,12 +158,16 @@ body {
         margin: 15px 15px;
     }
 
-    .skillStyle, .resumeBtn {
+    .skillStyle, .btn, input[type=text], textarea[name=message] {
         font-size: 30px;
     }
 
     .skills {
         margin: 0 50px;
+    }
+
+    .form {
+        margin: 0 20%
     }
 }
 

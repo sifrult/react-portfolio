@@ -69,7 +69,7 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div className='formStyle'>
       <form className="form">
         <input
           value={name}
@@ -80,6 +80,7 @@ export default function Contact() {
           placeholder="Name"
         />
         {nameError && <div className="error">{nameError}</div>}
+        <br />
         <input
           value={email}
           name="email"
@@ -89,7 +90,8 @@ export default function Contact() {
           placeholder="Email"
         />
         {emailError && <div className="error">{emailError}</div>}
-        <input
+        <br />
+        <textarea
           value={message}
           name="message"
           onChange={handleInputChange}
@@ -98,7 +100,8 @@ export default function Contact() {
           placeholder="Message"
         />
         {messageError && <div className="error">{messageError}</div>}
-        <button type="button" onClick={handleFormSubmit}>
+        <br />
+        <button className='btn' type="button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
